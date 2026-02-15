@@ -1,0 +1,142 @@
+@keyframes fadeInSlide {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(120deg, #6ae76a 0%, #d69e04 100%);
+    margin: 0;
+    padding: 0;
+}
+
+ul.navbar li a:hover {
+    background-color: #1ec0b3;
+}
+h2 {
+    text-align: center;
+    color: #000000;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+.vert { background: #4CAF50; }
+.jaune { background: #FFC107; color: #222; }
+.orange { background: #FF9800; }
+.red { background: #F44336; }
+.bleue { background: #2196F3; }
+.navbar li {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    list-style: none;
+    margin: 0;
+}
+.navbar {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background: #222;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    list-style: none;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    line-height: 60px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.navbar li a:hover {
+    background-color: #1ec0b3;
+}
+
+#bouton {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+
+.container {
+  max-width: 400px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 30px 20px;
+  animation: fadeInSlide 1s ease-out;
+}
+
+#hasard {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.calculatrice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calculatrice label {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.calculatrice input[type="number"] {
+  width: 80%;
+  padding: 8px;
+  font-size: 1em;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.calculatrice button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: background 0.2s;
+}
+
+.calculatrice button:hover {
+  background: #388E3C;
+}
+
+#result, #score {
+  font-size: 1.1em;
+  margin: 8px 0;
+  text-align: center;
+}

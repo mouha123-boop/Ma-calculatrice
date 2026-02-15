@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeu de hasard</title>
+  <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+  <ul class="navbar">
+  <li><a href="indexprincipal.html" class="vert" id="bouton">Accueil</a></li>
+  <li><a href="index1.html" class="jaune" id="bouton">Calculatrice simple</a></li>
+  <li><a href="index3.html" class="orange" id="bouton">Vérification nombre premier</a></li>
+  <li><a href="index2.html" class="red" id="bouton">Calcul de la Factorielle</a></li>
+</ul>
+<br><br><br><br>
+  <h2>JEU DE HASARD</h2>
+  <div class="container">
+    <div class="calculatrice">
+      <label for="userNumber">Tentez votre chance entre les chiffres de 1 à 6 :</label>
+      <input type="number" id="userNumber" min="1" max="6" placeholder="Votre nombre (1-6)">
+      <button id="playBtn">Jouer</button>
+      <button id="replayBtn" style="display: none;">Rejouer</button>
+      <div id="result"></div>
+      <div id="score"></div>
+<button id="replayBtn" style="display: none;">Rejouer</button>
+
+    </div>
+  </div>
+  <script src="script4.js"></script>
+</body>
+</html>
