@@ -3,7 +3,6 @@ const btn = document.getElementById('playBtn');
 const replayBtn = document.getElementById('replayBtn');
 const resultDiv = document.getElementById('result');
 const scoreDiv = document.getElementById('score');
-
 let essais = 0;
 let victoires = 0;
 const totalEssais = 10;
@@ -24,7 +23,6 @@ btn.addEventListener('click', () => {
         } else {
             resultDiv.textContent = `Raté ! Le nombre était ${randomValue}.`;
         }
-
         essais++;
         scoreDiv.textContent = `Essais : ${essais} / ${totalEssais}`;
 
